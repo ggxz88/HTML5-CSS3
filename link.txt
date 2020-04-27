@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+	<body>
+		<!-- target 속성 -->
+		<!-- _blank : 새로운 윈도우에서 새로운 페이지 -->
+		<!-- _self : 현재 윈도우에 새로운 페이지를 적재(default) -->
+		<!-- _parent : 부모 프레임에 새로운 페이지를 적재 -->
+		<!-- _top : 현재 윈도우에 새로운 페이지를 적재하고 모든 프레임을 취소 -->
+		<a href="http://www.google.com" target="_blank">
+			google.com 방문</a>
+		<p>
+			target 속성이 "_blank"이므로 ,
+			링크는 새로운 탭에서 열립니다.
+		</p>
+	</body>
+</html>

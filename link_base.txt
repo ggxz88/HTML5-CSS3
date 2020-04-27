@@ -1,0 +1,6 @@
+<head>
+	<!-- 모든 링크에 대한 기본 디렉토리 정의 -->
+	<base href="http://www.company.com/" />
+</head>
+
+<a href="info.html" target="_blank">참고사항</a>
