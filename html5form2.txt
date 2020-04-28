@@ -1,0 +1,24 @@
+<form>
+	<!-- search -->
+	검색: <input type="search" name="search">
+	<!-- email -->
+	이메일: <input type="email" name="email" required><br>
+	<!-- url -->
+	URL: <input type="url" name="url" required><br>
+	<!-- tel -->
+	전화번호:
+	<input type="tel" name="tel" required
+		pattern="[0-9]{4}-[0-9]{4}-[0-9]{4}"
+		title="####-####-####"><br>
+	<input type="submit" />
+	<!-- number : 정수 입력받기 -->
+	신발사이즈 <input type="number" min="230" max="290" step="10" value="260" name="shoesize">
+	<!-- range : 어떤 범위에 속하는 정수 입력받기 -->
+	테니스 스킬 <input type="range" min="1" max="10" value="1">
+	<!-- 날짜 -->
+	생일 <input type="date" name="dob">
+	<!-- 시간 입력 -->
+	시작 시간 <input type="time" name="start-time">
+	<!-- 색상 입력 -->
+	색상 선택 <input type="color" name="color"/>
+</form>

@@ -1,0 +1,7 @@
+<!-- 라디오 버튼 -->
+<form>
+	성별:
+	<!-- name 속성은 동일해야 함 -->
+	<input type="radio" name="gender" value="male">남성
+	<input type="radio" name="gender" value="female">여성
+</form>

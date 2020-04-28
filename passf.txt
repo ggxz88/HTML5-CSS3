@@ -1,0 +1,4 @@
+<!-- 패스워드 필드 -->
+<form>
+패스워드: <input type="password" name="pass">
+</form>

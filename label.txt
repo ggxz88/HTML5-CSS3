@@ -1,0 +1,8 @@
+<!-- label 태그 : input 요소를 위한 레이블 정의 -->
+<form action="proc_form.jsp">
+	<label for="male">남성</label>
+	<input type="radio" name="gender" id="male" value="male"><br>
+	<label for="female">여성</label>
+	<input type="radio" name="gender" id="female" value="female"><br>
+	<input type="submit" value="제출">
+</form>
