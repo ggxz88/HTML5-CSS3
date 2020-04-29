@@ -1,0 +1,20 @@
+<!-- 타입 선택자 : h1 { color: green; } 모든 h1요소 선택 -->
+<!-- 전체 선택자 : * { color: blue; } 페이지 안 모든 요소를 선택 -->
+<!-- 아이디 선택자 : #special { color: red; } id가 special인 요소를 선택 -->
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>CSS id Example</title>
+		<style>
+			<!-- id가 special인 요소를 선택 -->
+			#special {
+				background-color: yellow;
+				color: red;
+			}
+		</style>
+	</head>
+	<body>
+		<p id="special">id가 special인 단락입니다.</p>
+		<p>정상적인 단락입니다.</p>
+	</body>
+</html>
