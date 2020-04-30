@@ -1,0 +1,35 @@
+<!-- 튀어오르는 공 애니메이션 -->
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>튀어오르는 공</title>
+
+		<style>
+			@-webkit-keyframes bounce {
+				from, to {
+					bottom: 0px;
+					-webkit-animation-timing-function: ease-out;
+					/* ease-out : 움직임이 멈출 때 끝에 이르러 변화의 정도가 서서히 감소하는 것 */
+				}
+				50% {
+					bottom: 200px;
+					-webkit-animation-timing-function: ease-in;
+					/* ease-in: 천천히 시작하는 것 */
+				}
+			}
+			#ball {
+				position: absolute;
+				width: 20px;
+				height: 20px;
+				background: red;
+				border-radius: 10px;
+				-webkit-animation-name: bounce;
+				-webkit-animation-iteration-count: infinite;
+				-webkit-animation-duration: 5s;
+			}	
+		</style>
+	</head>
+	<body>
+		<div id="ball">	</div>
+	</body>
+</html>

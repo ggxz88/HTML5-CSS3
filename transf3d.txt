@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<style>
+			div {
+				background-color: green;
+				width: 150px;
+				height: 150px;
+			}
+			.container {
+				background-color: yellow;
+				border: 1px solid black;
+			}
+			.transformed {
+				backface-visibility: visible; /*후면을 보이게하는 속성  */
+				transform-origin: 50% 42%; /* 변환 원점을 설정 */
+				transform: perspective(500px) rotateY(59deg) rotateX(0deg) /* transform: 3차원 변환 정의, perspective: 원근 변환에서 거리 설정, rotateY: Y축을 중심으로 하는 변환, rotateX: X축을 중심으로 하는 변환 */
+		</style>
+	</head>
+	<body>
+		<div class="container">
+			<div class="transformed"></div>
+		</div>
+	</body>
+</html>
