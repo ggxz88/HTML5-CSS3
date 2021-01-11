@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="kr">
+<head>
+    <meta charset="UTF-8">
+    <!-- datatables -->
+    <link rel="stylesheet" href="https://cdn.datatables.net/t/bs-3.3.6/jqc-1.12.0,dt-1.10.11/datatables.min.css"/>
+    <script src="https://cdn.datatables.net/t/bs-3.3.6/jqc-1.12.0,dt-1.10.11/datatables.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $("#foo-table").DataTable({
+               ajax: { 
+                   url: "data.json", 
+                   dataSrc: '' 
+               },
+                columns: [
+                    //{ data: "id" },
+                    //{ data: "name" }
+                    { targets: 0, data: "id" },
+                    { targets: 1, data: "name" },
+                ],
+                columnDefs : [{
+                    // 해당 함수에서 정제하여 리턴하면 테이블에 리턴된 값으로 표출
+                    "data": "url",
+                    "render": function(data, type, row) {
+                        data = '<a href="' + data + '">' + "링크로 이동" + '</a>';
+                        return data;
+                    }
+                }]
+                        
+            }); 
+        });
+    </script>
+    <title></title>
+</head>
+<body>
+    <table id="foo-table" class="table table-bordered">
+        <thead>
+            <tr>
+                <th>No</th>
+                <th>지역선택</th>
+            </tr>
+        </thead>
+    </table>
+</body>    
+</html>
